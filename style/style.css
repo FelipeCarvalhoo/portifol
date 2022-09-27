@@ -38,6 +38,8 @@ header .menu {
     display:flex;
     align-items:center;
 }
+
+
 .info {
     color:#FFF;
     padding: 20px 30px;
