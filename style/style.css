@@ -6,8 +6,11 @@ header {
     display:flex;
     justify-content:space-between;
     padding: 20px;
-    background-color:#ccc;
     align-items:center;
+    position:fixed;
+    right:0;
+    left:0;
+    top:0;
 }
 header .logo {
     font-size: 20px;
@@ -24,4 +27,48 @@ header .menu {
 .menu .menu-line {
     height:2px;
     background-color:#333;
+}
+.container {
+    display:flex;
+    height:100vh;
+}
+.container .left-side{
+    background-color:#cccc1ab0;
+    flex:1;
+    display:flex;
+    align-items:center;
+}
+.info {
+    color:#FFF;
+    padding: 20px 30px;
+}
+.info .profession {
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:19px;
+}
+.container .info .name {
+    font-size:80px;
+    font-weight: bold;
+}
+.info .buttons a {
+    display:inline-block;
+    background-color: #FFF;
+    color: #3B576B;
+    padding:20px 40px;
+    font-size:16px;
+    text-decoration:none;
+}
+.container .right-side{
+    background-color:#0000FF;
+    flex:1;
+    background-image: url(../image/hero.jpg);
+    background-size: 100% auto;
+    position:center top;
+}
+footer {
+    position:fixed;
+    right:0;
+    left:0;
+    bottom:0;
 }
