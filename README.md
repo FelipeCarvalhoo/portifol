@@ -3,6 +3,6 @@
 <hr>
 <p>Estaremos proceguindo</p>
 <h3>Imagem do inicio
-<img src="https://user-images.githubusercontent.com/92120832/192598139-ac34300b-74a3-4658-8ef7-8b6eb98e37bb.png">
+<img src="https://user-images.githubusercontent.com/92120832/192599276-d7415c9a-a14c-4418-9af4-1d62a3379847.png">
 <p>Observação sobre a imagem: caso você esteja vizualizando a imagem de um computador, verá que as margens parecem estar desconfiguradas, porem ela esta zerada
   no css, esta estatica.</p>
