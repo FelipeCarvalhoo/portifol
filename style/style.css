@@ -33,7 +33,7 @@ header .menu {
     height:100vh;
 }
 .container .left-side{
-    background-color:#cccc1ab0;
+    background-color:#3B576B;
     flex:1;
     display:flex;
     align-items:center;
@@ -80,7 +80,7 @@ header .menu {
     background-color:#0000FF;
     flex:1;
     background-image: url(../image/hero.jpg);
-    background-size: 100% auto;
+    background-size: cover;
     position:center top;
 }
 footer {
@@ -94,4 +94,19 @@ footer {
 }
 footer a {
     color:#FFF;
+}
+
+@media (max-width: 900px) {
+    .container{
+        flex-direction:column;
+    }
+    header{
+        position:inherit;
+        background-color:#3B576B;
+    }
+    .menu .menu-line {
+        height:2px;
+        background-color:#FFF;
+    }
+    
 }
