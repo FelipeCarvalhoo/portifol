@@ -35,7 +35,6 @@ header .menu {
 .container .left-side{
     background-color:#3B576B;
     flex:1;
-    display:flex;
     align-items:center;
 }
 
@@ -78,7 +77,7 @@ header .menu {
 }
 .container .right-side{
     background-color:#0000FF;
-    flex:1;
+    flex:auto;
     background-image: url(../image/hero.jpg);
     background-size: cover;
     position:center top;
@@ -97,16 +96,18 @@ footer a {
 }
 
 @media (max-width: 900px) {
+    header {
+        position:initial;
+    }
     .container{
         flex-direction:column;
     }
-    header{
-        position:inherit;
-        background-color:#3B576B;
+
+    .left-side {
+        flex:none;
     }
-    .menu .menu-line {
-        height:2px;
-        background-color:#FFF;
+    .right-side {
+        flex:1;
     }
     
 }
