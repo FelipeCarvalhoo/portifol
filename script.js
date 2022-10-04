@@ -1,6 +1,6 @@
-let u = document.querySelector('.container-menu');
+let u = document.querySelector('.mmenu');
 
-u.style.display = 'none';
+voltar()
 
 function menuu() {
     u.style.display = 'flex';

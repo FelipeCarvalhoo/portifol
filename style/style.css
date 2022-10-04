@@ -35,10 +35,13 @@ header .menu {
     height:100vh;
 }
 .container .left-side{
-    background-color:#3B576B;
+    background-color:#2a1c2b;
     flex:1;
     display:flex;
     align-items:center;
+    background-image: url(../image/right-image.jpg);
+    background-size: cover;
+    position:center top;
 }
 
 
@@ -60,7 +63,7 @@ header .menu {
 .info .buttons a {
     display:inline-block;
     background-color: #FFF;
-    color: #3B576B;
+    color: #709a5c;
     padding:20px 40px;
     font-size:16px;
     text-decoration:none;
@@ -75,8 +78,8 @@ header .menu {
 }
 .info .buttons a.light {
 
-    color:#333;
-    background-color:#3B576B;
+    color:#000;
+    background-color:#0c4208;
 }
 .container .right-side {
     background-color:#0000FF;
@@ -97,11 +100,9 @@ footer {
 footer a {
     color:#111;
 }
-.container-menu {
-    height:100vh;
-    width:100vw;
+.mmenu {
+    height:100%;
     position:absolute;
-    z-index: 999;
     top:0;
     right:0;
     left:0;
@@ -110,7 +111,7 @@ footer a {
 }
 .voltar{
     flex:1;
-    background-color: yellow;
+    /*background-color: yellow;*/
 }
 
 .menu-right{
@@ -125,35 +126,44 @@ display: flex;
 }
 .menu1{
     flex:1;
-    background-color: #0000FF;
+    /*background-color: #0000FF;*/
 }
 .menu2{
     flex:1;
-    background-color: #0000FF;
+   /* background-color: #0000FF;*/
 }
 .menu3{
     flex:1;
 }
 .linePrincipal {
     flex:1;
-    background-color: #111;
+    /*background-color:rgba(0, 0, 0, 0.8);*/
+    display:flex;
+    flex-direction:column;
 }
-.line-2{
+.line-2 {
     flex:1;
     background-color: rgba(0, 0, 0, 0.8);
 }
-.line-3 {
-    flex:1;
-    background-color: rgba(0, 0, 0, 0.8);
+.line-2 {
+    text-align: center;
+    /*display:flex;*/
+    flex-direction:column;
+    justify-content: space-around;
 }
-.line-4 {
-    flex:1;
-    background-color: rgba(0, 0, 0, 0.8);
+.line-2 ul {
+    display:flex;
+    flex-direction:column;
+    background-color:red;
+    height: 100%;
+    justify-content: space-around;
 }
-.line-5{
-    flex:1;
-    background-color: rgba(0, 0, 0, 0.8);
+.line-2 ul li{
+ color:white;
+ display:inline-block;
+ justify-content: space-between;
 }
+
 @media (max-width: 900px) {
     .container{
         flex-direction:column;
@@ -164,6 +174,8 @@ display: flex;
         padding: 20px 30px;
         justify-content:center;
         text-align: center;
+        background-image: none;
+        background-color:#0c4208;
     }
     .info{
         padding:0;
@@ -173,7 +185,7 @@ display: flex;
     }
     header{
         position:inherit;
-        background-color:#3B576B;
+        background-color:#0c4208;
     }
     header .logo {
         color: #333;
@@ -188,9 +200,9 @@ display: flex;
         font-size:12px;
     }
     .container .right-side {
-        background-color:#0000FF;
+        background-color:#0c4208;
         flex:1;
-        background-image: url(../image/minha-picture.jpg);
+        background-image: url(../image/minha-picture3.jpg);
         background-size:cover;
        position:bottom;
     }
@@ -204,5 +216,12 @@ display: flex;
     .info .buttons a {
         padding: 10px 20px;
         font-size: 10px;
+    }
+    .container .right-side {
+        background-color:#0000FF;
+        flex:1;
+        background-image: url(../image/minha-picture.jpg);
+        background-size:cover;
+       position:center left;
     }
 }
