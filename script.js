@@ -11,3 +11,8 @@ function voltar() {
 function menuToReturn() {
     voltar();
 }
+
+function nova_tela() {
+    document.querySelector('.new-window').style.display = 'flex';
+    voltar();
+}
