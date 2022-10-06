@@ -39,9 +39,7 @@ header .menu {
     flex:1;
     display:flex;
     align-items:center;
-    background-image: url(../image/right-image.jpg);
-    background-size: cover;
-    position:center top;
+    background-color:#0c4208;
 }
 
 
@@ -108,7 +106,6 @@ footer a {
     right:0;
     left:0;
     bottom:0;
-    background-color:green;
     display:flex;
 }
 .new-window {
@@ -116,11 +113,18 @@ footer a {
     height:100vh;
     position:absolute;
     display:none;
-    background-color:blue;
+    background-color:#FFF;
     top:0;
+    flex-direction:column;
+
 }
 .new-header{
-    height:auto;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-top:10px;
 }
 .new-header .menu {
     width:40px;
@@ -132,7 +136,7 @@ footer a {
 }
 .new-header .menu-line {
     height:2px;
-    background-color:#333;
+    background-color:black;
 }
 
 
@@ -142,15 +146,14 @@ footer a {
 }
 
 .menu-right{
-    width:100%;
-    height:100vh;
+    
+    flex:1;
     display:flex;
     flex-direction: column;
 }
 .menuu {
 height: 50px;
 display: flex;
-background-color:#000;
 }
 .menu1{
     flex:1;
@@ -168,10 +171,11 @@ background-color:#000;
     /*background-color:rgba(0, 0, 0, 0.8);*/
     display:flex;
     flex-direction:column;
+    margin-left: 20px;
 }
 .line-2 {
     flex:1;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: black;
 }
 .line-2 {
     text-align: center;
@@ -194,7 +198,33 @@ background-color:#000;
     cursor:pointer;
     color:yellow;
 }
+.new-space {
+    height: 100vh;
+    background-color:red;
+}
+.nwindow-space {
+    height:100vh;
+    width:100vw;
+    display:flex;
+    background-color:white;
+    align-items: center;
+    justify-content: center;
+}
+.window-status {
+    height:90%;
+    width:80%;
+    border: 2px solid #2a1c2b;
+    justify-content:center;
 
+}
+.status1 {
+    flex:1;
+    background-color:#0000FF;
+}
+.status2 {
+    flex:1;
+    background-color:red;
+}
 @media (max-width: 900px) {
     .container{
         flex-direction:column;
@@ -237,7 +267,20 @@ background-color:#000;
         background-size:cover;
        position:bottom;
     }
-    
+    .window-status {
+        width: 70%;
+        height: 70%;
+    }
+    .status1 {
+        flex:1;
+    }
+    .status2 {
+        flex:1;
+    }
+    .new-header .menu-line {
+        height: 2px;
+        background-color: black;
+    }
 }
 @media (max-width: 450px) {
 
@@ -255,7 +298,13 @@ background-color:#000;
         background-size:cover;
        position:center left;
     }
-    .left_voltar{
-        display:none;
-    }
+   
+   .left_voltar{
+    display:none;
+   }
+   .line-2 {
+    flex:1;
+    background-color:#000;
+}
+
 }
