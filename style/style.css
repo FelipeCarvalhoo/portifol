@@ -203,7 +203,7 @@ display: flex;
     background-color:red;
 }
 .nwindow-space {
-    height:100vh;
+    height:calc(100vh - 58px);
     width:100vw;
     display:flex;
     background-color:white;
@@ -211,19 +211,57 @@ display: flex;
     justify-content: center;
 }
 .window-status {
-    height:90%;
-    width:80%;
+    height:calc(100vh - 50vh);
+    width:calc(100vw - 50vw);
     border: 2px solid #2a1c2b;
     justify-content:center;
+    overflow:hidden;
+    position: relative;
 
 }
 .status1 {
-    flex:1;
-    background-color:#0000FF;
+    height:50%;
+    background-size: cover;
+    overflow:hidden;
+    background-size:cover;
+  
 }
+.image1 {
+height: 100%;
+background-image: url(../image/quemsou.jpg);
+background-size:cover;
+position:center;
+display:none;
+position:static;
+}
+.image2 {
+    height: 100%;
+    background-image: url(../image/decisão.png);
+    background-size:cover;
+    display:none;
+    }
+    .image3 {
+        height: 100%;
+        background-image: url(../image/desafios.jpg);
+        background-size:cover;
+        display:none;
+        }
+        .image4 {
+            height: 100%;
+            background-image: url(../image/oque\ faco\ da\ vida.webp);
+            background-size:cover;
+            display:none;
+            }
+            .image5 {
+                height: 100%;
+                background-image: url(../image/decisão.png);
+                background-size:cover;
+                display:none;
+                }
+
 .status2 {
     flex:1;
-    background-color:red;
+    background-color: red;
 }
 @media (max-width: 900px) {
     .container{
@@ -266,10 +304,21 @@ display: flex;
         background-image: url(../image/minha-picture3.jpg);
         background-size:cover;
        position:bottom;
+       top:40;
     }
     .window-status {
-        width: 70%;
-        height: 70%;
+        height:calc(100vh - 50vh);
+        width:calc(100vw - 50vw);
+        border: 2px solid #2a1c2b;
+        justify-content:center;
+        overflow:hidden;
+    
+    }
+    .status1 {
+        height:50%;
+        background-size: cover;
+        overflow:hidden;
+      
     }
     .status1 {
         flex:1;
@@ -307,4 +356,21 @@ display: flex;
     background-color:#000;
 }
 
+}
+
+@media (max-width: 390px) {
+    .window-status {
+        height:calc(100vh -20vh);
+        width:calc(100vw - 20vw);
+        border: 2px solid #2a1c2b;
+        justify-content:center;
+        overflow:hidden;
+    
+    }
+    .status1 {
+        height:50%;
+        background-size: cover;
+        overflow:hidden;
+      
+    }
 }
