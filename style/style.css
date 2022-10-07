@@ -174,7 +174,7 @@ display: flex;
     margin-left: 20px;
 }
 .line-2 {
-    flex:1;
+    height: 100%;
     background-color: black;
 }
 .line-2 {
@@ -220,49 +220,79 @@ display: flex;
 
 }
 .status1 {
-    height:50%;
+    width:100%;
     background-size: cover;
     overflow:hidden;
     background-size:cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:green;
   
+}
+.imagens-status {
+    width:150px;
+    height: 100px;
+    overflow:hidden;
+    background-color:red;
+    align-items: center;
+    justify-content: center;
+}
+.flex {
+    flex:1;
+    display:flex;
+    justify-content: center;
 }
 .image1 {
 height: 100%;
+width:100%;
+justify-content: center;
+align-items: center;
 background-image: url(../image/quemsou.jpg);
 background-size:cover;
-position:center;
+background-position:right top;
 display:none;
-position:static;
 }
 .image2 {
     height: 100%;
     background-image: url(../image/decisão.png);
     background-size:cover;
     display:none;
+    background-position:center top;
     }
     .image3 {
         height: 100%;
         background-image: url(../image/desafios.jpg);
         background-size:cover;
         display:none;
+        background-position:left top;
         }
         .image4 {
             height: 100%;
             background-image: url(../image/oque\ faco\ da\ vida.webp);
             background-size:cover;
             display:none;
+            background-position:left top;
             }
             .image5 {
                 height: 100%;
                 background-image: url(../image/decisão.png);
                 background-size:cover;
+                background-position:left top;
                 display:none;
                 }
-
-.status2 {
-    flex:1;
-    background-color: red;
-}
+    .status h1, p {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        background-color:#0000FF;
+    }
+    h1 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        background-color:#0000FF;
+    }
 @media (max-width: 900px) {
     .container{
         flex-direction:column;
@@ -306,26 +336,7 @@ position:static;
        position:bottom;
        top:40;
     }
-    .window-status {
-        height:calc(100vh - 50vh);
-        width:calc(100vw - 50vw);
-        border: 2px solid #2a1c2b;
-        justify-content:center;
-        overflow:hidden;
     
-    }
-    .status1 {
-        height:50%;
-        background-size: cover;
-        overflow:hidden;
-      
-    }
-    .status1 {
-        flex:1;
-    }
-    .status2 {
-        flex:1;
-    }
     .new-header .menu-line {
         height: 2px;
         background-color: black;
@@ -356,7 +367,24 @@ position:static;
     background-color:#000;
 }
 
+.imagens-status {
+    width:100px;
+    height: 80px;
+    overflow:hidden;
+    background-color:red;
 }
+
+header .menu {
+    width:20px;
+    height:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    cursor:pointer;
+}
+
+}
+
 
 @media (max-width: 390px) {
     .window-status {
@@ -368,7 +396,7 @@ position:static;
     
     }
     .status1 {
-        height:50%;
+        height:100%;
         background-size: cover;
         overflow:hidden;
       

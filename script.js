@@ -4,7 +4,6 @@ let telaInformacao = document.querySelector('.new-window');
 let footer = document.querySelector('footer');
 //imagens
 let primeiroStatus = document.querySelector('.new-window .status1');
-let texto2 = document.querySelector('.status2');
 let imagem1 = document.querySelector('.image1');
 let imagem2 = document.querySelector('.image2');
 let imagem3 = document.querySelector('.image3');
@@ -65,5 +64,4 @@ function nova_tela() {
 }
 function image1(nova_tela) {
     let howIam = document.querySelector('.image1');
-    status2.innerHTML = "";
 }
